@@ -1,0 +1,6 @@
+<div class="data_sales">
+		<table width="100%" border="0">
+			<tbody>
+				<tr>
+					<td width="75%">
+						<img style="max-height:80px;" src="../img/setting/logo.png

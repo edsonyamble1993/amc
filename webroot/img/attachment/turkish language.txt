@@ -1,0 +1,38 @@
+Hello,
+
+Add language:
+
+Login your site(Opencart) admin panel
+Click on System link(Left sidemenu)
+ -> Click on Localisation
+ ->Click on languages
+
+ Click on Add Language button(top right).
+
+ Fill All Textbox that mention below
+
+ Language Name : Türkçe
+ Code : tr
+ Locale : tr_TR.UTF-8,tr_TR,tr-tr,turkish
+ Image : tr.png
+ Directory : turkish
+ Status : Enabled
+ Sort Order : 1
+
+ after then 
+
+ Click on Save Button.
+
+
+Download Language Pack:
+
+Download language pack from below link.
+
+Link: https://www.dropbox.com/s/ywyj3mbk2skohsr/upload.zip?dl=0
+
+get this file upload.zip.
+
+when you are unzip this file you can get 2 directory(admin,catalog). copy both folder and place in to you root directory.
+
+thanks
+

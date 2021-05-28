@@ -1,0 +1,96 @@
+a.) admin/includes/modules/products/collect_info.php - we need to query the field's value:
+
+Find this line:
+
+if (isset($_GET['pID']) && empty($_POST)) {
+$product = $db->Execute("select pd.products_name, pd.products_description, pd.products_url,
+
+//And add the following line:
+p.products_multi_model, //(just look at the pattern)
+
+
+----------------------------------------------------------------------------------------------------------------
+Find this line:
+
+<link rel="stylesheet" type="text/css" href="includes/javascript/spiffyCal/spiffyCal_v2_1.css">
+<script language="JavaScript" src="includes/javascript/spiffyCal/spiffyCal_v2_1.js"></script>
+
+//And add the following line after that:
+
+<!--this is add by me-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap.tagsinput/0.4.2/bootstrap-tagsinput.css" />
+<script src="https://cdn.jsdelivr.net/bootstrap.tagsinput/0.4.2/bootstrap-tagsinput.min.js"></script>
+<style type="text/css">
+.bootstrap-tagsinput {
+    width: 100%;
+}
+.label {
+    line-height: 2 !important;
+}
+
+		.main >.bootstrap-tagsinput {
+    padding:0px !important; 
+    margin-bottom:0px !important; 
+	box-shadow:none;
+	border-radius:0px !important;
+}
+	
+	.main span.tag.label.label-info {
+    font-size: 10px;
+    font-family: arial;
+    font-weight: bolder;
+
+		
+
+</style>
+<!--Upto this-->
+
+
+<script>
+	jQuery(function(){
+		jQuery('input[name=products_multi_model]').css("display","none");
+		jQuery("#inputdata").change(function(){
+		
+		jQuery('input[name=products_multi_model]').val(jQuery(this).tagsinput('items'));
+		
+		});
+		
+	});
+</script>
+----------------------------------------------------------------------------------------------------------------
+
+
+
+
+*we need to show the fields in the product page, so add this line (maybe under Product Qty Min/Unit Mix: or where ever you want):
+
+	<tr>
+<td class="main"><?php echo TEXT_PRODUCTS_MULTI_MODEL; ?></td>
+<td class="main">
+<?php echo zen_draw_separator('pixel_trans.gif', '24', '15'); ?>
+<!--<?php echo zen_draw_separator('pixel_trans.gif', '24', '15') . ' ' . zen_draw_input_field('products_multi_model', ($pInfo->products_multi_model)); ?>-->
+   <input type="text" id="inputdata" name="products_multi_model" value="<?php echo $pInfo->products_multi_model; ?>" data-role="tagsinput" class="taginputclass" />
+</td>
+</tr>
+
+
+
+b.) admin/includes/languages/english/product.php - this is where we will define the label for the field, just add this line:
+
+
+define('TEXT_PRODUCTS_MULTI_MODEL','Products Parts:');
+
+
+c.) admin/includes/modules/update_product.php - we need to update the update statement.
+Find this line: 
+
+
+$sql_data_array = array('products_quantity' => $products_quantity,
+
+
+And insert this line:
+
+'products_multi_model' => zen_db_prepare_input($_POST['products_multi_model']),
+
+
+If you are not familiar with how a query works, just look at the pattern. Easy right?

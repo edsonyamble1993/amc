@@ -1,0 +1,101 @@
+<div class="data_quotation">
+		<table width="100%" border="0">
+			<tbody>
+				<tr>
+					<td width="70%">
+						<img style="max-height:80px;" src="../img/setting/logo.png">
+					</td>
+					<td align="left" width="30%">
+						<strong>Quotation Number : </strong>Q1460082017<br>
+						<strong>Date : </strong> 2017-08-19<br>
+						</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		
+		<hr/>
+		<table width="100%" border="0">
+			<tbody>
+				<tr>
+					<td align="left" width="70%">
+						<h4>Other information</h4>
+					</td>
+					<td align="left" width="30%">
+						<h4>Quotation To </h4>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left" width="70%">
+						<b>Contact Person : </b><br>					
+						<b>Reference Number : </b><br>					
+						<b>Billing Address: </b>sapath hexa,bapunagar<br>	</td>				
+					<td valign="top" align="left" width="30%">
+						<b>Name : </b>dhaval  patel<br><b>Subject	 : </b><br><b>Mobile : </b>7722939429<br><b>Email : </b>dhavalpatel@gmail.com</td>
+				</tr>
+			</tbody>
+		</table>
+		<hr/>
+		
+		
+		<table width="100%" border="0">
+			<tbody>
+				<tr>
+					<td align="left">
+						<h4>Message</h4>
+					</td>
+					
+				</tr>
+				<tr>
+					<td valign="top" align="left">
+						<p>sadfas</p>
+</td>
+					</tr>
+			</tbody>
+		</table>
+		<hr/>
+		<table width="100%" border="0">
+			<tbody>
+				<tr>
+					<td align="left">
+						<h4>Product Information</h4>
+					</td>
+					
+				</tr>
+				
+			</tbody>
+		</table><br/>
+		
+		
+		<table class="table table-bordered" width="100%" border="1" style="border-collapse:collapse;">
+		<thead>
+				<tr>
+					<th class="text-center">Item Name</th>
+					<th class="text-center"> Quantity</th>
+					<th class="text-center">Price </th>
+					<th class="text-center">Amount </th>
+				</tr>
+			</thead>
+			<tbody><tr>
+					<td class="text-center">guru</td>
+					<td class="text-center">1</td>
+					<td class="text-center">2200</td>
+					<td class="text-center">2200</td>
+					
+					</tr><tr>
+					<td class="text-center">Lenovo K5 plus</td>
+					<td class="text-center">2</td>
+					<td class="text-center">8000</td>
+					<td class="text-center">16000</td>
+					
+					</tr></tbody>
+		</table><table class="table" style="border:1px solid #ddd"  width="100%">
+			<tr>
+				<td colspan="2" class="text-right" align="right">Grand Total</td>
+				<td colspan="2" class="text-center" align="center">18200</td>
+			
+			</tr>
+	
+		</table>
+		<hr/>
+		</div>

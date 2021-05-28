@@ -1,0 +1,18 @@
+.input.text > label
+{
+	display:none;
+}
+.input.select > label
+{
+	display:none;
+}
+.input.file > label
+{
+	display:inline;
+}
+.input.password > label
+{
+	display:inline;
+
+}
+.profileimg{border-radius:50%;}
